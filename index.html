@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Exam Material</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            direction: rtl;
+            text-align: right;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #343a40;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #343a40;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: right;
+        }
+        th {
+            background: #007bff;
+            color: white;
+        }
+        .passage, .questions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .passage p, .questions li {
+            margin: 10px 0;
+        }
+        .toggle-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .toggle-btn:hover {
+            background: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مادة امتحان الانترودكشن</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#terms">المصطلحات</a></li>
+            <li><a href="#passage">القطعة الأدبية</a></li>
+            <li><a href="#questions">أسئلة العد</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="terms" class="section">
+            <h2>المصطلحات ومعانيها</h2>
+            <table>
+                <tr>
+                    <th>المصطلح (بالإنجليزية)</th>
+                    <th>المعنى (بالعربية)</th>
+                </tr>
+                <tr>
+                    <td>Suffrage</td>
+                    <td>الحق في التصويت في الانتخابات السياسية</td>
+                </tr>
+                <tr>
+                    <td>Political Party</td>
+                    <td>مجموعة منظمة تسعى للتأثير على الحكومة أو السيطرة عليها من خلال انتخاب مرشحيها للمناصب العامة</td>
+                </tr>
+                <tr>
+                    <td>Two-Party System</td>
+                    <td>نظام سياسي تهيمن فيه حزبان رئيسيان على السياسة، كما هو الحال في المملكة المتحدة والولايات المتحدة</td>
+                </tr>
+                <tr>
+                    <td>Multi-Party System</td>
+                    <td>نظام سياسي يضم عدة أحزاب، لا يستطيع أي منها تحقيق أغلبية مطلقة باستمرار، مما يؤدي غالبًا إلى حكومات ائتلافية</td>
+                </tr>
+                <tr>
+                    <td>Dominant-Party System</td>
+                    <td>نظام يسمح بوجود أحزاب متعددة، لكن حزب واحد يحصل دائمًا على الأصوات الكافية لتشكيل الحكومة</td>
+                </tr>
+                <tr>
+                    <td>One-Party System</td>
+                    <td>نظام سياسي يكون فيه حزب واحد فقط مسموحًا قانونيًا بالحكم أو يهيمن على السياسة بالكامل</td>
+                </tr>
+                <tr>
+                    <td>Pressure Groups (Interest Groups)</td>
+                    <td>جمعيات منظمة تهدف إلى التأثير على سياسات الحكومة لتحقيق فوائد محددة دون السعي للحكم</td>
+                </tr>
+                <tr>
+                    <td>Coalition Government</td>
+                    <td>حكومة تتشكل من تعاون عدة أحزاب سياسية، وهي شائعة في أنظمة الأحزاب المتعددة</td>
+                </tr>
+                <tr>
+                    <td>Consensus</td>
+                    <td>الاتفاق العام على القضايا السياسية أو الدستورية الأساسية، وهو شرط أساسي غالبًا لنظام حزبي مستقر</td>
+                </tr>
+                <tr>
+                    <td>Ideological Differences</td>
+                    <td>خلافات عميقة تستند إلى المعتقدات السياسية أو الاجتماعية أو الاقتصادية، وهي بارزة غالبًا في أنظمة الأحزاب المتعددة</td>
+                </tr>
+            </table>
+        </div>
+        <div id="passage" class="section">
+            <h2>القطعة الأدبية</h2>
+            <div class="passage">
+                <h3>النص بالإنجليزية</h3>
+                <p>The evolution of the modern political party system in Western Europe was driven by the extension of suffrage, which necessitated broader voter engagement. In England, electoral reforms in 1832, 1867, and 1885 progressively widened the electorate, compelling parliamentarians to establish local committees and organize political activities to appeal to new voters. Similarly, the multi-party system in countries like France reflects deep ideological differences rooted in social, ethnic, or religious divisions, often resulting in coalition governments. In contrast, the two-party system, as seen in Britain, thrives on consensus and discourages extremism by encouraging pragmatic policies to attract the majority.</p>
+                <button class="toggle-btn" onclick="toggleTranslation()">عرض/إخفاء الترجمة</button>
+                <div id="translation" class="hidden">
+                    <h3>الترجمة إلى العربية</h3>
+                    <p>تطور نظام الأحزاب السياسية الحديث في أوروبا الغربية كان مدفوعًا بتوسيع حق الاقتراع، مما استلزم مشاركة أوسع للناخبين. في إنجلترا، أدت الإصلاحات الانتخابية في أعوام 1832 و1867 و1885 إلى توسيع قاعدة الناخبين تدريجيًا، مما أجبر أعضاء البرلمان على إنشاء لجان محلية وتنظيم أنشطة سياسية لجذب الناخبين الجدد. وبالمثل، يعكس نظام الأحزاب المتعددة في دول مثل فرنسا اختلافات أيديولوجية عميقة متجذرة في الانقسامات الاجتماعية أو العرقية أو الدينية، مما يؤدي غالبًا إلى تشكيل حكومات ائتلافية. على النقيض، يزدهر نظام الحزبين، كما في بريطانيا، على التوافق ويحد من التطرف من خلال تشجيع سياسات عملية لجذب الأغلبية.</p>
+                </div>
+            </div>
+        </div>
+        <div id="questions" class="section">
+            <h2>أسئلة العد</h2>
+            <div class="questions">
+                <h3>السؤال الأول</h3>
+                <p><strong>What are the main reasons why many people still advocate for the one-party system?</strong></p>
+                <ul>
+                    <li>Most one-party systems started as nationalist movements against colonial rule.</li>
+                    <li>They were instruments that mobilized popular participation and support to achieve independence.</li>
+                    <li>They were the most suitable organizations to govern effectively after independence, addressing challenges like integration, stability, and development.</li>
+                    <li>Competitive multi-party systems tend to deepen divisions in societies suffering from regional, tribal, ethnic, religious, or national identity problems.</li>
+                </ul>
+                <button class="toggle-btn" onclick="toggleAnswer(1)">عرض/إخفاء الترجمة</button>
+                <div id="answer1" class="hidden">
+                    <ul>
+                        <li>بدأت معظم أنظمة الحزب الواحد كحركات قومية ضد الحكم الاستعماري.</li>
+                        <li>كانت أدوات لتعبئة المشاركة الشعبية والدعم لتحقيق الاستقلال.</li>
+                        <li>كانت المنظمات الأكثر ملاءمة للحكم بفعالية بعد الاستقلال، لمواجهة تحديات التكامل والاستقرار والتنمية.</li>
+                        <li>تميل الأنظمة متعددة الأحزاب التنافسية إلى تعميق الانقسامات في المجتمعات التي تعاني من مشكلات الهوية الإقليمية أو القبلية أو العرقية أو الدينية أو الوطنية.</li>
+                    </ul>
+                </div>
+
+                <h3>السؤال الثاني</h3>
+                <p><strong>What are the main functions of a political party?</strong></p>
+                <ul>
+                    <li>It influences or controls the government.</li>
+                    <li>It nominates candidates.</li>
+                    <li>It clarifies issues.</li>
+                    <li>It organizes mass participation.</li>
+                    <li>It educates the people and turns public opinion into public policy.</li>
+                    <li>It serves as a channel for social forces, social reforms, social philosophy, and political organization.</li>
+                </ul>
+                <button class="toggle-btn" onclick="toggleAnswer(2)">عرض/إخفاء الترجمة</button>
+                <div id="answer2" class="hidden">
+                    <ul>
+                        <li>يؤثر على الحكومة أو يسيطر عليها.</li>
+                        <li>يرشح المرشحين.</li>
+                        <li>يوضح القضايا.</li>
+                        <li>ينظم المشاركة الجماهيرية.</li>
+                        <li>يعلم الناس ويحول الرأي العام إلى سياسة عامة.</li>
+                        <li>يشكل قناة للقوى الاجتماعية، والإصلاحات الاجتماعية، والفلسفة الاجتماعية، والتنظيم السياسي.</li>
+                    </ul>
+                </div>
+
+                <h3>السؤال الثالث</h3>
+                <p><strong>What are the main functions of pressure groups?</strong></p>
+                <ul>
+                    <li>They try to influence the legislature, political parties, the government through the executive, and the public, especially during elections.</li>
+                    <li>They provide the government with specialized and technical information useful for legislation or implementation of laws.</li>
+                    <li>They serve as a link between the government and the people.</li>
+                    <li>They act as a check on public policy and administration between elections.</li>
+                </ul>
+                <button class="toggle-btn" onclick="toggleAnswer(3)">عرض/إخفاء الترجمة</button>
+                <div id="answer3" class="hidden">
+                    <ul>
+                        <li>تسعى للتأثير على الهيئة التشريعية، والأحزاب السياسية، والحكومة من خلال السلطة التنفيذية، والجمهور، خاصة خلال الانتخابات.</li>
+                        <li>توفر للحكومة معلومات متخصصة وفنية مفيدة للتشريع أو تنفيذ القوانين.</li>
+                        <li>تشكل حلقة وصل بين الحكومة والشعب.</li>
+                        <li>تعمل كرقيب على السياسة العامة والإدارة بين الانتخابات.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 مادة الانترودكشن - الياس خضر</p>
+    </footer>
+    <script>
+        function toggleTranslation() {
+            const translation = document.getElementById('translation');
+            translation.classList.toggle('hidden');
+        }
+
+        function toggleAnswer(id) {
+            const answer = document.getElementById(`answer${id}`);
+            answer.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
