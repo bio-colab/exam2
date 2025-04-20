@@ -85,6 +85,11 @@
         .passage p, .questions li {
             margin: 10px 0;
         }
+        .english-text {
+            text-align: right;
+            direction: ltr;
+            display: inline-block;
+        }
         .toggle-btn {
             background: #007bff;
             color: white;
@@ -109,6 +114,10 @@
             bottom: 0;
             width: 100%;
         }
+        .numbered-list {
+            list-style: decimal;
+            padding-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -129,45 +138,56 @@
                 <tr>
                     <th>المصطلح (بالإنجليزية)</th>
                     <th>المعنى (بالعربية)</th>
+                    <th>الشرح</th>
                 </tr>
                 <tr>
                     <td>Suffrage</td>
+                    <td>حق التصويت</td>
                     <td>الحق في التصويت في الانتخابات السياسية</td>
                 </tr>
                 <tr>
                     <td>Political Party</td>
+                    <td>حزب سياسي</td>
                     <td>مجموعة منظمة تسعى للتأثير على الحكومة أو السيطرة عليها من خلال انتخاب مرشحيها للمناصب العامة</td>
                 </tr>
                 <tr>
                     <td>Two-Party System</td>
+                    <td>نظام الحزبين</td>
                     <td>نظام سياسي تهيمن فيه حزبان رئيسيان على السياسة، كما هو الحال في المملكة المتحدة والولايات المتحدة</td>
                 </tr>
                 <tr>
                     <td>Multi-Party System</td>
+                    <td>نظام الأحزاب المتعددة</td>
                     <td>نظام سياسي يضم عدة أحزاب، لا يستطيع أي منها تحقيق أغلبية مطلقة باستمرار، مما يؤدي غالبًا إلى حكومات ائتلافية</td>
                 </tr>
                 <tr>
                     <td>Dominant-Party System</td>
+                    <td>نظام الحزب المهيمن</td>
                     <td>نظام يسمح بوجود أحزاب متعددة، لكن حزب واحد يحصل دائمًا على الأصوات الكافية لتشكيل الحكومة</td>
                 </tr>
                 <tr>
                     <td>One-Party System</td>
+                    <td>نظام الحزب الواحد</td>
                     <td>نظام سياسي يكون فيه حزب واحد فقط مسموحًا قانونيًا بالحكم أو يهيمن على السياسة بالكامل</td>
                 </tr>
                 <tr>
                     <td>Pressure Groups (Interest Groups)</td>
+                    <td>جماعات الضغط</td>
                     <td>جمعيات منظمة تهدف إلى التأثير على سياسات الحكومة لتحقيق فوائد محددة دون السعي للحكم</td>
                 </tr>
                 <tr>
                     <td>Coalition Government</td>
+                    <td>حكومة ائتلافية</td>
                     <td>حكومة تتشكل من تعاون عدة أحزاب سياسية، وهي شائعة في أنظمة الأحزاب المتعددة</td>
                 </tr>
                 <tr>
                     <td>Consensus</td>
+                    <td>توافق</td>
                     <td>الاتفاق العام على القضايا السياسية أو الدستورية الأساسية، وهو شرط أساسي غالبًا لنظام حزبي مستقر</td>
                 </tr>
                 <tr>
                     <td>Ideological Differences</td>
+                    <td>اختلافات أيديولوجية</td>
                     <td>خلافات عميقة تستند إلى المعتقدات السياسية أو الاجتماعية أو الاقتصادية، وهي بارزة غالبًا في أنظمة الأحزاب المتعددة</td>
                 </tr>
             </table>
@@ -176,7 +196,7 @@
             <h2>القطعة الأدبية</h2>
             <div class="passage">
                 <h3>النص بالإنجليزية</h3>
-                <p>The evolution of the modern political party system in Western Europe was driven by the extension of suffrage, which necessitated broader voter engagement. In England, electoral reforms in 1832, 1867, and 1885 progressively widened the electorate, compelling parliamentarians to establish local committees and organize political activities to appeal to new voters. Similarly, the multi-party system in countries like France reflects deep ideological differences rooted in social, ethnic, or religious divisions, often resulting in coalition governments. In contrast, the two-party system, as seen in Britain, thrives on consensus and discourages extremism by encouraging pragmatic policies to attract the majority.</p>
+                <p class="english-text">The evolution of the modern political party system in Western Europe was driven by the extension of suffrage, which necessitated broader voter engagement. In England, electoral reforms in 1832, 1867, and 1885 progressively widened the electorate, compelling parliamentarians to establish local committees and organize political activities to appeal to new voters. Similarly, the multi-party system in countries like France reflects deep ideological differences rooted in social, ethnic, or religious divisions, often resulting in coalition governments. In contrast, the two-party system, as seen in Britain, thrives on consensus and discourages extremism by encouraging pragmatic policies to attract the majority.</p>
                 <button class="toggle-btn" onclick="toggleTranslation()">عرض/إخفاء الترجمة</button>
                 <div id="translation" class="hidden">
                     <h3>الترجمة إلى العربية</h3>
@@ -188,16 +208,16 @@
             <h2>أسئلة العد</h2>
             <div class="questions">
                 <h3>السؤال الأول</h3>
-                <p><strong>What are the main reasons why many people still advocate for the one-party system?</strong></p>
-                <ul>
-                    <li>Most one-party systems started as nationalist movements against colonial rule.</li>
-                    <li>They were instruments that mobilized popular participation and support to achieve independence.</li>
-                    <li>They were the most suitable organizations to govern effectively after independence, addressing challenges like integration, stability, and development.</li>
-                    <li>Competitive multi-party systems tend to deepen divisions in societies suffering from regional, tribal, ethnic, religious, or national identity problems.</li>
+                <p><strong class="english-text">What are the main reasons why many people still advocate for the one-party system?</strong></p>
+                <ul class="numbered-list">
+                    <li class="english-text">Most one-party systems started as nationalist movements against colonial rule.</li>
+                    <li class="english-text">They were instruments that mobilized popular participation and support to achieve independence.</li>
+                    <li class="english-text">They were the most suitable organizations to govern effectively after independence, addressing challenges like integration, stability, and development.</li>
+                    <li class="english-text">Competitive multi-party systems tend to deepen divisions in societies suffering from regional, tribal, ethnic, religious, or national identity problems.</li>
                 </ul>
                 <button class="toggle-btn" onclick="toggleAnswer(1)">عرض/إخفاء الترجمة</button>
                 <div id="answer1" class="hidden">
-                    <ul>
+                    <ul class="numbered-list">
                         <li>بدأت معظم أنظمة الحزب الواحد كحركات قومية ضد الحكم الاستعماري.</li>
                         <li>كانت أدوات لتعبئة المشاركة الشعبية والدعم لتحقيق الاستقلال.</li>
                         <li>كانت المنظمات الأكثر ملاءمة للحكم بفعالية بعد الاستقلال، لمواجهة تحديات التكامل والاستقرار والتنمية.</li>
@@ -206,18 +226,18 @@
                 </div>
 
                 <h3>السؤال الثاني</h3>
-                <p><strong>What are the main functions of a political party?</strong></p>
-                <ul>
-                    <li>It influences or controls the government.</li>
-                    <li>It nominates candidates.</li>
-                    <li>It clarifies issues.</li>
-                    <li>It organizes mass participation.</li>
-                    <li>It educates the people and turns public opinion into public policy.</li>
-                    <li>It serves as a channel for social forces, social reforms, social philosophy, and political organization.</li>
+                <p><strong class="english-text">What are the main functions of a political party?</strong></p>
+                <ul class="numbered-list">
+                    <li class="english-text">It influences or controls the government.</li>
+                    <li class="english-text">It nominates candidates.</li>
+                    <li class="english-text">It clarifies issues.</li>
+                    <li class="english-text">It organizes mass participation.</li>
+                    <li class="english-text">It educates the people and turns public opinion into public policy.</li>
+                    <li class="english-text">It serves as a channel for social forces, social reforms, social philosophy, and political organization.</li>
                 </ul>
                 <button class="toggle-btn" onclick="toggleAnswer(2)">عرض/إخفاء الترجمة</button>
                 <div id="answer2" class="hidden">
-                    <ul>
+                    <ul class="numbered-list">
                         <li>يؤثر على الحكومة أو يسيطر عليها.</li>
                         <li>يرشح المرشحين.</li>
                         <li>يوضح القضايا.</li>
@@ -228,16 +248,16 @@
                 </div>
 
                 <h3>السؤال الثالث</h3>
-                <p><strong>What are the main functions of pressure groups?</strong></p>
-                <ul>
-                    <li>They try to influence the legislature, political parties, the government through the executive, and the public, especially during elections.</li>
-                    <li>They provide the government with specialized and technical information useful for legislation or implementation of laws.</li>
-                    <li>They serve as a link between the government and the people.</li>
-                    <li>They act as a check on public policy and administration between elections.</li>
+                <p><strong class="english-text">What are the main functions of pressure groups?</strong></p>
+                <ul class="numbered-list">
+                    <li class="english-text">They try to influence the legislature, political parties, the government through the executive, and the public, especially during elections.</li>
+                    <li class="english-text">They provide the government with specialized and technical information useful for legislation or implementation of laws.</li>
+                    <li class="english-text">They serve as a link between the government and the people.</li>
+                    <li class="english-text">They act as a check on public policy and administration between elections.</li>
                 </ul>
                 <button class="toggle-btn" onclick="toggleAnswer(3)">عرض/إخفاء الترجمة</button>
                 <div id="answer3" class="hidden">
-                    <ul>
+                    <ul class="numbered-list">
                         <li>تسعى للتأثير على الهيئة التشريعية، والأحزاب السياسية، والحكومة من خلال السلطة التنفيذية، والجمهور، خاصة خلال الانتخابات.</li>
                         <li>توفر للحكومة معلومات متخصصة وفنية مفيدة للتشريع أو تنفيذ القوانين.</li>
                         <li>تشكل حلقة وصل بين الحكومة والشعب.</li>
